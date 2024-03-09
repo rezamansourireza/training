@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my project</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="/main/css/style.css">
+    <link rel="stylesheet" href="/main/css/util.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  </head>
 
@@ -18,10 +18,10 @@
 
 <hr>
 
-   <nav>
+   <nav class="white z-depth-4">
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="#!" class="blue-text">home</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons blue-text">3d_rotation</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="sass.html">Sass</a></li>
           <li><a href="badges.html">Components</a></li>
@@ -32,10 +32,22 @@
     </nav>
   
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="collapsible.html">Javascript</a></li>
-      <li><a href="mobile.html">Mobile</a></li>
+      <li><div class="user-view">
+        <div class="background">
+          <img src="/main/img/office-2.webp" class="w-full">
+        </div>
+        <a href="#user"><img class="circle" src="/main/img/avatar.png"></a>
+        <a href="#name"><span class="white-text name">Jane Doe</span></a>
+        <a href="#email"><span class="white-text email">qasem-dadash@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">toll</i>AQ First Link</a></li>
+      <li><a href="https://codeyad.com/" target="_blank"><i class="material-icons">toll</i>about codyad</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">pages</a></li>
+      <li><a class="waves-effect" href="#!">telegram</a></li>
+      <li><a class="waves-effect" href="#!">instagram</a></li>
+      <li><a class="waves-effect" href="#!">whatsapp</a></li>
     </ul>
     
     <script src="/main/js/app.js"></script>
