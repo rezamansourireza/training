@@ -1,9 +1,19 @@
-@media(min-width:600px){
-    .top_navbar{
+@media(min-width:600px) {
+    .top_navbar {
         box-shadow: 0 0 50px gray !important;
     }
-    #top-action-section{
+
+    #top-action-section {
         display: flex;
         align-items: center;
     }
+}
+
+
+.user-list-item.active .user-list-arrow-icon {
+    transform: rotate(180deg);
+}
+
+.user-list-item.active , .user-list-item.active .collapsible-header{
+   background-color: rgba(222, 211, 250, 0.4);
 }
