@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/main/css/util.css">
     <link rel="stylesheet" href="/main/css/style.css">
+    <link rel="stylesheet" href="/main/css/materialize-rtl.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -16,16 +17,15 @@
 
 
 
-<body>
+<body dir="rtl">
 
 
     <!-- ------===== navbar start =====---------- -->
     <nav class="white z-depth-0 top_navbar">
         <div class="nav-wrapper">
             <a href="#!" class="blue-text hide-on-med-and-up">user manager</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
-                    class="material-icons blue-text">adjust</i></a>
-            <ul class="left hide-on-med-and-down">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons blue-text ">adjust</i></a>
+            <ul class="hide-on-med-and-down dis-flex">
                 <li><a href="index.html" class="blue-text">home</a></li>
                 <li><a href="user.html" class="blue-text">user manager</a></li>
                 <li><a href="https//:codeyad.com" class="blue-text">codyad</a></li>
@@ -46,9 +46,9 @@
                 <a><span class="white-text email">qasem-dadash@gmail.com</span></a>
             </div>
         </li>
-        <li><a href="#!"><i class="material-icons">toll</i>AQ First Link</a></li>
-        <li><a href="https://codeyad.com/" target="_blank"><i class="material-icons">toll</i>about codyad</a></li>
-        <li><a href="#!">Second Link</a></li>
+        <li><a href="#!"><i class="material-icons right sidenav-link-icon">toll</i>AQ First Link</a></li>
+        <li><a href="https://codeyad.com/" target="_blank"><i class="material-icons right sidenav-link-icon">toll</i>about codyad</a></li>
+        <li><a href="#!"><i class="material-icons right sidenav-link-icon">toll</i>Second Link</a></li>
         <li>
             <div class="divider"></div>
         </li>
@@ -57,7 +57,7 @@
         <li><a class="waves-effect" href="#!">instagram</a></li>
         <li><a class="waves-effect" href="#!">whatsapp</a></li>
     </ul>
-    <!-- ------===== nabbar   end =====---------- -->
+    <!-- ------===== navbar   end =====---------- -->
 
 
 
@@ -318,9 +318,9 @@
 
             <div class="pagination_buttoms">
                 <i
-                    class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light white-text rounded_pill_1">keyboard_arrow_left</i>
-                <i
                     class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light white-text rounded_pill_1">keyboard_arrow_right</i>
+                <i
+                    class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light white-text rounded_pill_1">keyboard_arrow_left</i>
 
             </div>
         </div>
@@ -329,7 +329,7 @@
 
 
     <div class="add_user_modal_back dis-none"></div>
-    <div class="add_user_modal container rounded_top_30 trans-0-1">
+    <div class="add_user_modal container rounded_top_30 trans-0-3">
         <div class="row p-t-10 p-b-10 p-r-40 p-l-40 center-on-small-only">
             <h5>
                 <i class="material-icons m-r-10 m-l-10 pos-relative top-10">person_add</i>

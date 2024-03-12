@@ -1,3 +1,19 @@
+
+
+@font-face {
+    font-family: "Byekan";
+    src: url("../fonts/BYekan/BYekan-webfont.eot") format("eot"),
+        url("../fonts/BYekan/BYekan-webfont.ttf") format("truetype"),
+        url("../fonts/BYekan/BYekan-webfont.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+}
+* {
+    direction: rtl;
+    font-family: "Byekan";
+}
+
+
 @media(min-width:600px) {
     .top_navbar {
         box-shadow: 0 0 50px gray !important;
@@ -14,28 +30,31 @@
     transform: rotate(180deg);
 }
 
-.user-list-item.active , .user-list-item.active .collapsible-header{
-   background-color: rgba(222, 211, 250, 0.4);
+.user-list-item.active,
+.user-list-item.active .collapsible-header {
+    background-color: rgba(222, 211, 250, 0.4);
 }
-table.highlight > tbody > tr:hover{
+
+table.highlight>tbody>tr:hover {
     background-color: #1e88e5;
 }
 
-.container{
+.container {
     width: 100% !important;
 }
 
 
-.add_user_modal_back{
+.add_user_modal_back {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     left: 0;
     top: 0;
     z-index: 999;
 }
-.add_user_modal{
+
+.add_user_modal {
     position: fixed;
     height: 70vh;
     background-color: white;
@@ -45,7 +64,12 @@ table.highlight > tbody > tr:hover{
     right: 0;
     bottom: -70vh;
 }
-.add_user_modal.show{
+
+.add_user_modal.show {
     bottom: 0;
     box-shadow: 0 0 10px blue;
+}
+
+.sidenav-link-icon {
+    margin-right: 0 !important;
 }
