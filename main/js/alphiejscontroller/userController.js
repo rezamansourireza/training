@@ -1,13 +1,15 @@
 document.addEventListener('alpine:init', () => {
-    Alpine.data('userData', () => ({
+    Alpine.data('usersData', () => ({
         users: [],
         isloading: false,
+        showaddmodal:false,
         getUsers() {
             this.isloading = true
             axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
-                this.user = res.data
+                this.users = res.data
+
+            }).finally(() => {
                 this.isloading = false
-                console.log(res);
             })
         }
 
