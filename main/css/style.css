@@ -9,7 +9,6 @@
         font-style: normal;
 }
 * {
-    direction: rtl;
     font-family: "Byekan";
 }
 
@@ -70,6 +69,11 @@ table.highlight>tbody>tr:hover {
     box-shadow: 0 0 10px blue;
 }
 
-.sidenav-link-icon {
-    margin-right: 0 !important;
+
+
+.gray{
+    background-color: gray;
+}
+.red{
+    background-color: red;
 }

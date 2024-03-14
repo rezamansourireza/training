@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/main/css/util.css">
     <link rel="stylesheet" href="/main/css/style.css">
-    <link rel="stylesheet" href="/main/css/materialize-rtl.css">
+    <!-- <link rel="stylesheet" href="/main/css/materialize-rtl.css"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -17,14 +17,15 @@
 
 
 
-<body dir="rtl">
+<body>
 
 
     <!-- ------===== navbar start =====---------- -->
     <nav class="white z-depth-0 top_navbar">
         <div class="nav-wrapper">
             <a href="#!" class="blue-text hide-on-med-and-up">user manager</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons blue-text ">adjust</i></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger "><i
+                    class="material-icons blue-text ">adjust</i></a>
             <ul class="hide-on-med-and-down dis-flex">
                 <li><a href="index.html" class="blue-text">home</a></li>
                 <li><a href="user.html" class="blue-text">user manager</a></li>
@@ -46,9 +47,10 @@
                 <a><span class="white-text email">qasem-dadash@gmail.com</span></a>
             </div>
         </li>
-        <li><a href="#!"><i class="material-icons right sidenav-link-icon">toll</i>AQ First Link</a></li>
-        <li><a href="https://codeyad.com/" target="_blank"><i class="material-icons right sidenav-link-icon">toll</i>about codyad</a></li>
-        <li><a href="#!"><i class="material-icons right sidenav-link-icon">toll</i>Second Link</a></li>
+        <li><a href="#!"><i class="material-icons  sidenav-link-icon">toll</i>AQ First Link</a></li>
+        <li><a href="https://codeyad.com/" target="_blank"><i
+                    class="material-icons sidenav-link-icon">toll</i>about codyad</a></li>
+        <li><a href="#!"><i class="material-icons  sidenav-link-icon">toll</i>Second Link</a></li>
         <li>
             <div class="divider"></div>
         </li>
@@ -240,8 +242,9 @@
                         <th>action</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="destop_table_body">
                     <tr>
+                        <td>1</td>
                         <td>reza</td>
                         <td>mansouri</td>
                         <td>rema49202@gmail.com</td>
@@ -251,9 +254,9 @@
                             <i class="material-icons deep-orange-text accent-3">delete</i>
                         </td>
                     </tr>
-                </tbody>
-                <tbody>
+
                     <tr>
+                        <td>1</td>
                         <td>reza</td>
                         <td>mansouri</td>
                         <td>rema49202@gmail.com</td>
@@ -263,9 +266,9 @@
                             <i class="material-icons deep-orange-text accent-3">delete</i>
                         </td>
                     </tr>
-                </tbody>
-                <tbody>
+
                     <tr>
+                        <td>1</td>
                         <td>reza</td>
                         <td>mansouri</td>
                         <td>rema49202@gmail.com</td>
@@ -275,9 +278,9 @@
                             <i class="material-icons deep-orange-text accent-3">delete</i>
                         </td>
                     </tr>
-                </tbody>
-                <tbody>
+
                     <tr>
+                        <td>1</td>
                         <td>reza</td>
                         <td>mansouri</td>
                         <td>rema49202@gmail.com</td>
@@ -287,9 +290,9 @@
                             <i class="material-icons deep-orange-text accent-3">delete</i>
                         </td>
                     </tr>
-                </tbody>
-                <tbody>
+
                     <tr>
+                        <td>1</td>
                         <td>reza</td>
                         <td>mansouri</td>
                         <td>rema49202@gmail.com</td>
@@ -327,6 +330,13 @@
 
     </section>
 
+    <section id="test_section" class="gray" x-data="{message:'i love programming'}">
+        <span x-text="message" class="red"></span>
+        123456789
+        <button class="btn" x-on:click="message = 'i love alpine'">click</button>
+    </section>
+    
+
 
     <div class="add_user_modal_back dis-none"></div>
     <div class="add_user_modal container rounded_top_30 trans-0-3">
@@ -354,7 +364,8 @@
                     <label for="adress">adress</label>
                 </div>
 
-                <button type="button" id="add_user_button" class="waves-effect waves-light btn blue darken-1 m-t-20 m-b-10 w-full max-w-250 rounded_pill_3 flex-c ">submit</button>
+                <button type="button" id="add_user_button"
+                    class="waves-effect waves-light btn blue darken-1 m-t-20 m-b-10 w-full max-w-250 rounded_pill_3 flex-c ">submit</button>
             </form>
         </div>
     </div>
@@ -362,6 +373,7 @@
 
 
 
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="/main/js/user.js"></script>
     <script src="/main/js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
