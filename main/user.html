@@ -17,10 +17,10 @@
 
 
 
-<body>
+<body x-data="userData">
 
 
-    <!-- ------===== navbar start =====---------- -->
+    
     <nav class="white z-depth-0 top_navbar">
         <div class="nav-wrapper">
             <a href="#!" class="blue-text hide-on-med-and-up">user manager</a>
@@ -65,6 +65,7 @@
 
 
     <!-- ------===== content start =====---------- -->
+
     <section id="top-action-section" class="row m-b-0 container">
         <!-- ------add buttom--------- -->
         <div class="p-r-30 p-l-30 col s12 m3 l2">
@@ -73,6 +74,7 @@
                 add user
             </button>
         </div>
+
         <!-- ------search section--------- -->
 
         <div class="col s12 m9 l8">
@@ -243,65 +245,19 @@
                     </tr>
                 </thead>
                 <tbody class="destop_table_body">
-                    <tr>
-                        <td>1</td>
-                        <td>reza</td>
-                        <td>mansouri</td>
-                        <td>rema49202@gmail.com</td>
-                        <td>kermanshah</td>
-                        <td>
-                            <i class="material-icons yellow-text accent-2">create</i>
-                            <i class="material-icons deep-orange-text accent-3">delete</i>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>1</td>
-                        <td>reza</td>
-                        <td>mansouri</td>
-                        <td>rema49202@gmail.com</td>
-                        <td>kermanshah</td>
-                        <td>
-                            <i class="material-icons yellow-text accent-2">create</i>
-                            <i class="material-icons deep-orange-text accent-3">delete</i>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>1</td>
-                        <td>reza</td>
-                        <td>mansouri</td>
-                        <td>rema49202@gmail.com</td>
-                        <td>kermanshah</td>
-                        <td>
-                            <i class="material-icons yellow-text accent-2">create</i>
-                            <i class="material-icons deep-orange-text accent-3">delete</i>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>1</td>
-                        <td>reza</td>
-                        <td>mansouri</td>
-                        <td>rema49202@gmail.com</td>
-                        <td>kermanshah</td>
-                        <td>
-                            <i class="material-icons yellow-text accent-2">create</i>
-                            <i class="material-icons deep-orange-text accent-3">delete</i>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>1</td>
-                        <td>reza</td>
-                        <td>mansouri</td>
-                        <td>rema49202@gmail.com</td>
-                        <td>kermanshah</td>
-                        <td>
-                            <i class="material-icons yellow-text accent-2">create</i>
-                            <i class="material-icons deep-orange-text accent-3">delete</i>
-                        </td>
-                    </tr>
+                    <template x-for="user in users">
+                        <tr>
+                            <td x-test="user.id"></td>
+                            <td x-test="user.name"></td>
+                            <td x-test="user.username"></td>
+                            <td x-test="user.email"></td>
+                            <td x-test="user.adress.city"></td>
+                            <td>
+                                <i class="material-icons yellow-text accent-2">create</i>
+                                <i class="material-icons deep-orange-text accent-3">delete</i>
+                            </td> 
+                        </tr>
+                    </template>
                 </tbody>
 
             </table>
@@ -329,14 +285,6 @@
         </div>
 
     </section>
-
-    <section id="test_section" class="gray" x-data="mainData()">
-        123456789
-        <span x-text="message" class="red"></span>
-        
-        <button class="btn" x-on:click="testfunc()">click</button>
-    </section>
-
 
 
     <div class="add_user_modal_back dis-none"></div>
@@ -372,8 +320,8 @@
     </div>
 
 
-
-    <script src="/main/js/alphiejscontroller/mainController.js"></script>
+    <script src="/main/js/axios.js"></script>
+    <script src="/main/js/alphiejscontroller/userController.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="/main/js/user.js"></script>
     <script src="/main/js/app.js"></script>
