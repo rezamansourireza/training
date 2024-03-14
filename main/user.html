@@ -20,7 +20,7 @@
 <body x-data="userData">
 
 
-    
+
     <nav class="white z-depth-0 top_navbar">
         <div class="nav-wrapper">
             <a href="#!" class="blue-text hide-on-med-and-up">user manager</a>
@@ -92,144 +92,51 @@
         <div class="l2 hode-on-med-and-down"></div>
     </section>
 
-    <section class="user-list-section">
+    <div class="center-align" x-show="isloading">
+        <div class="spinner-layer spinner-green">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <section class="user-list-section" x-init="getusers()">
         <ul class="collapsible hide-on-med-and-up">
-            <li class="user-list-item">
-                <div class="collapsible-header">
-                    <i
-                        class="material-icons blue-text darken-4 user-list-arrow-icon trans-0-2">arrow_drop_down_circle</i>
-                    reza
-                </div>
-                <div class="collapsible-body">
-                    <div class="p-all-5">
-                        <span class="f-bold">urename : </span>
-                        <span>reza mansouri</span>
-                    </div>
-                    <div class="p-all-5">
-                        <span class="f-bold">adress : </span>
-                        <span>kermanshah</span>
-                    </div>
-                    <div class="p-all-5">
-                        <span class="f-bold">email : </span>
-                        <span>rema@gmail.com</span>
-                    </div>
-                    <div class="p-all-5">
-                        <span class="f-bold">action : </span>
-                        <i class="material-icons yellow-text accent-2">create</i>
-                        <i class="material-icons deep-orange-text accent-3">delete</i>
-                    </div>
-                </div>
-            </li>
+            <template x-for="user in users">
+                <li class="user-list-item">
 
-            <li class="user-list-item">
-                <div class="collapsible-header">
-                    <i
-                        class="material-icons blue-text darken-4 user-list-arrow-icon trans-0-2">arrow_drop_down_circle</i>
-                    reza
-                </div>
-                <div class="collapsible-body">
-                    <div class="p-all-5">
-                        <span class="f-bold">urename : </span>
-                        <span>reza mansouri</span>
+                    <div class="collapsible-header">
+                        <i
+                            class="material-icons blue-text darken-4 user-list-arrow-icon trans-0-2">arrow_drop_down_circle</i>
+                        reza
                     </div>
-                    <div class="p-all-5">
-                        <span class="f-bold">adress : </span>
-                        <span>kermanshah</span>
+                    <div class="collapsible-body">
+                        <div class="p-all-5">
+                            <span class="f-bold" x-test="user.username"></span>
+                            <span></span>
+                        </div>
+                        <div class="p-all-5">
+                            <span class="f-bold" x-test="user.email"></span>
+                            <span></span>
+                        </div>
+                        <div class="p-all-5">
+                            <span class="f-bold" x-test="user.adress.city"></span>
+                            <span></span>
+                        </div>
+                        <div class="p-all-5">
+                            <span class="f-bold">action : </span>
+                            <i class="material-icons yellow-text accent-2">create</i>
+                            <i class="material-icons deep-orange-text accent-3">delete</i>
+                        </div>
                     </div>
-                    <div class="p-all-5">
-                        <span class="f-bold">email : </span>
-                        <span>rema@gmail.com</span>
-                    </div>
-                    <div class="p-all-5">
-                        <span class="f-bold">action : </span>
-                        <i class="material-icons yellow-text accent-2">create</i>
-                        <i class="material-icons deep-orange-text accent-3">delete</i>
-                    </div>
-                </div>
-            </li>
-
-            <li class="user-list-item">
-                <div class="collapsible-header">
-                    <i
-                        class="material-icons blue-text darken-4 user-list-arrow-icon trans-0-2">arrow_drop_down_circle</i>
-                    reza
-                </div>
-                <div class="collapsible-body">
-                    <div class="p-all-5">
-                        <span class="f-bold">urename : </span>
-                        <span>reza mansouri</span>
-                    </div>
-                    <div class="p-all-5">
-                        <span class="f-bold">adress : </span>
-                        <span>kermanshah</span>
-                    </div>
-                    <div class="p-all-5">
-                        <span class="f-bold">email : </span>
-                        <span>rema@gmail.com</span>
-                    </div>
-                    <div class="p-all-5">
-                        <span class="f-bold">action : </span>
-                        <i class="material-icons yellow-text accent-2">create</i>
-                        <i class="material-icons deep-orange-text accent-3">delete</i>
-                    </div>
-                </div>
-            </li>
-
-            <li class="user-list-item">
-                <div class="collapsible-header">
-                    <i
-                        class="material-icons blue-text darken-4 user-list-arrow-icon trans-0-2">arrow_drop_down_circle</i>
-                    reza
-                </div>
-                <div class="collapsible-body">
-                    <div class="p-all-5">
-                        <span class="f-bold">urename : </span>
-                        <span>reza mansouri</span>
-                    </div>
-                    <div class="p-all-5">
-                        <span class="f-bold">adress : </span>
-                        <span>kermanshah</span>
-                    </div>
-                    <div class="p-all-5">
-                        <span class="f-bold">email : </span>
-                        <span>rema@gmail.com</span>
-                    </div>
-                    <div class="p-all-5">
-                        <span class="f-bold">action : </span>
-                        <i class="material-icons yellow-text accent-2">create</i>
-                        <i class="material-icons deep-orange-text accent-3">delete</i>
-                    </div>
-                </div>
-            </li>
-
-            <li class="user-list-item">
-                <div class="collapsible-header">
-                    <i
-                        class="material-icons blue-text darken-4 user-list-arrow-icon trans-0-2">arrow_drop_down_circle</i>
-                    reza
-                </div>
-                <div class="collapsible-body">
-                    <div class="p-all-5">
-                        <span class="f-bold">urename : </span>
-                        <span>reza mansouri</span>
-                    </div>
-                    <div class="p-all-5">
-                        <span class="f-bold">adress : </span>
-                        <span>kermanshah</span>
-                    </div>
-                    <div class="p-all-5">
-                        <span class="f-bold">email : </span>
-                        <span>rema@gmail.com</span>
-                    </div>
-                    <div class="p-all-5">
-                        <span class="f-bold">action : </span>
-                        <i class="material-icons yellow-text accent-2">create</i>
-                        <i class="material-icons deep-orange-text accent-3">delete</i>
-                    </div>
-                </div>
-            </li>
-
-
+                </li>
+            </template>
         </ul>
 
 
@@ -255,7 +162,7 @@
                             <td>
                                 <i class="material-icons yellow-text accent-2">create</i>
                                 <i class="material-icons deep-orange-text accent-3">delete</i>
-                            </td> 
+                            </td>
                         </tr>
                     </template>
                 </tbody>
