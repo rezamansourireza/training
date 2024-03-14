@@ -48,8 +48,8 @@
             </div>
         </li>
         <li><a href="#!"><i class="material-icons  sidenav-link-icon">toll</i>AQ First Link</a></li>
-        <li><a href="https://codeyad.com/" target="_blank"><i
-                    class="material-icons sidenav-link-icon">toll</i>about codyad</a></li>
+        <li><a href="https://codeyad.com/" target="_blank"><i class="material-icons sidenav-link-icon">toll</i>about
+                codyad</a></li>
         <li><a href="#!"><i class="material-icons  sidenav-link-icon">toll</i>Second Link</a></li>
         <li>
             <div class="divider"></div>
@@ -330,12 +330,13 @@
 
     </section>
 
-    <section id="test_section" class="gray" x-data="{message:'i love programming'}">
-        <span x-text="message" class="red"></span>
+    <section id="test_section" class="gray" x-data="mainData()">
         123456789
-        <button class="btn" x-on:click="message = 'i love alpine'">click</button>
+        <span x-text="message" class="red"></span>
+        
+        <button class="btn" x-on:click="testfunc()">click</button>
     </section>
-    
+
 
 
     <div class="add_user_modal_back dis-none"></div>
@@ -372,7 +373,7 @@
 
 
 
-
+    <script src="/main/js/alphiejscontroller/mainController.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="/main/js/user.js"></script>
     <script src="/main/js/app.js"></script>
