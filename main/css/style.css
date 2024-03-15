@@ -57,14 +57,14 @@ table.highlight>tbody>tr:hover {
     position: fixed;
     height: 70vh;
     background-color: white;
-    bottom: 0;
+    bottom: -70vh;
     z-index: 1000;
     left: 0;
     right: 0;
-    bottom: -70vh;
+    
 }
 
-.add_user_modal .show {
+.add_user_modal.show {
     bottom: 0;
     box-shadow: 0 0 10px blue;
 }
