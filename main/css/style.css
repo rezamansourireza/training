@@ -64,7 +64,7 @@ table.highlight>tbody>tr:hover {
     bottom: -70vh;
 }
 
-.add_user_modal.show {
+.add_user_modal .show {
     bottom: 0;
     box-shadow: 0 0 10px blue;
 }

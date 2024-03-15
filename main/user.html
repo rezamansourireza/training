@@ -195,8 +195,8 @@
     </section>
 
 
-    <div class="add_user_modal_back" x-bind:class="{'dis-none' : !showaddmodal}" x-on:click="showaddmodal = false"></div>
-    <div class="add_user_modal container rounded_top_30 trans-0-3" x-bind:class="{'show' : showaddmodal}">
+    <div class="add_user_modal_back" x-show:="showaddmodal" x-transition x-on:click="showaddmodal = false"></div>
+    <div class="add_user_modal container rounded_top_30 trans-0-3" x-bind:class="showaddmodal ? 'show' : ''">
         <div class="row p-t-10 p-b-10 p-r-40 p-l-40 center-on-small-only">
             <h5>
                 <i class="material-icons m-r-10 m-l-10 pos-relative top-10">person_add</i>
