@@ -79,9 +79,9 @@
         <!-- ------search section--------- -->
 
         <div class="col s12 m9 l8">
-            <div class="input-field col s12 m-b-0">
+            <div class="input-field col s12 m-b-0" x-init="$watch('searchchar', (value)=>handlesearch(value))" >
 
-                <input id="search" type="text" class="validate">
+                <input id="search" type="text" class="validate" x-model="searchchar">
 
                 <label for="search">
                     <i class="material-icons pos-relative top-7">search</i>
